@@ -8,6 +8,7 @@
     <!-- integracion css de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./resources/img/fav.ico" type="image/x-icon">
     <title>Geeks</title>
@@ -15,39 +16,11 @@
 
 <body>
     <header>
-        <!-- 
-        <div class="logoNav">
-            <a href="index.html">
-                <img src="./resources/img/logo.jpg" alt="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/accesosrios.html">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="./pages/figuras.html">Figuras</a>
-                    </li>
-                    <li>
-                        <a href="./pages/computacion.html">Computación</a>
-                    </li>
-                    <li>
-                        <a href="./pages/ofertas.html">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        -->
         <div class="logoNav">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./resources/img/logo.jpg" alt="logo Weeks"></a>
+                    <a class="navbar-brand" href="  index.html"><img src="./resources/img/logo.jpg"
+                            alt="logo Weeks"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -55,432 +28,312 @@
                     <div class="collapse navbar-collapse navcenter" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="./pages/accesosrios.html">ACCESORIOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link disabled" href="./pages/figuras.html">FIGURAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link disabled" href="./pages/computacion.html">COMPUTACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./pages/ofertas.html"> OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </div>
-
     </header>
 
-    <main>
-        <!-- Contenido principal -->
-        <div class="principalDiv">
-            <h1>Video Geeks Semanal</h1>
-            <div class="videoDestacado">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/i2tbfots2JE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="parrafovideoDestacado">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est autem quisquam ducimus tempore
-                    enim. Beatae, tempora. Cupiditate voluptas deserunt, incidunt aut eum quisquam mollitia, vitae
-                    deleniti minus, amet sint? Saepe, reiciendis quia sunt rem earum omnis. Aut dolorem veniam saepe
-                    blanditiis sapiente, soluta, ipsam quo voluptatum facere cum ut?</p>
+    <main class="container-fluid principalDiv">
+        <div class="row">
+            <!-- Contenido principal -->
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <h1>Video Geeks de la Semana</h1>
+
+                <div class="col-xl-8 col-md-6 col-sm-12 m-5 playerContainer">
+                    <iframe src="https://www.youtube.com/embed/i2tbfots2JE" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 parrafovideoDestacado">
+                    <p>Este es el resumen de los lanzamientos de la semana, donde revisamos lo ultimo en tecnologia ,
+                        gaming, figuras. Suscirbete al canal!</p>
+                </div>
             </div>
         </div>
     </main>
     <section class="bg-1">
-        <!-- Accesorios -->
         <div class="container">
             <h2>Accesorios</h2>
-            <div class="productBoxs">
-                <div class="block">
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 1</h3>
+                        <img src="./resources/img/accesorios/pack-teclado-mouse.jpeg" class="img-fluid"
+                            alt="pack teclado mouse">
+                        <div class="card-body">
+                            <p class="card-text">Pack Teclado + Mouse</p>
+                            <i class="bi bi-cart"></i><span>19.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 2</h3>
+                        <img src="./resources/img/accesorios/monitor.jpeg" class="img-fluid" alt="monitor">
+                        <div class="card-body">
+                            <p class="card-text">Pc escritorio</p>
+                            <i class="bi bi-cart"></i><span> 28.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 3</h3>
+                        <img src="./resources/img/accesorios/router.jpeg" class="img-fluid" alt="router">
+                        <div class="card-body">
+                            <p class="card-text">router</p>
+                            <i class="bi bi-cart"></i><span> 25.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 4</h3>
+                        <img src="./resources/img/accesorios/mouse.jpeg" class="img-fluid" alt="mouse">
+                        <div class="card-body">
+                            <p class="card-text">mouse</p>
+                            <i class="bi bi-cart"></i><span> 3.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 5</h3>
+                        <img src="./resources/img/accesorios/audifonos.jpeg" class="img-fluid" alt="audifonos">
+                        <div class="card-body">
+                            <p class="card-text">audifonos gamer</p>
+                            <i class="bi bi-cart"></i><span> 16.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
+                <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 6</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 7</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 8</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 9</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 10</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 11</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 12</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 13</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="./pages/accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 14</h3>
+                        <img src="./resources/img/accesorios/gabinete.jpeg" class="img-fluid" alt="gabinete">
+                        <div class="card-body">
+                            <p class="card-text">gabinete</p>
+                            <i class="bi bi-cart"></i><span> 42.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="buttonViewMore">
-                <a href="./pages/accesosrios.html">Ver más</a>
-            </div>
+        </div>
+        <div class="buttonViewMore">
+            <a href="./pages/accesosrios.html">Ver más</a>
         </div>
     </section>
     <section class="bg-2">
-        <!-- Figuras -->
         <div class="container">
-            <div class="container">
-                <h2>Figuras</h2>
-                <div class="productBoxs">
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 1</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 2</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 3</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 4</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 5</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 6</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 7</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 8</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 9</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 10</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 11</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 12</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 13</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 14</h3>
-                        </a>
-                    </div>
+            <h2>FIGURAS</h2>
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/fma.jpeg" class="img-fluid" alt="fma">
+                        <div class="card-body">
+                            <p class="card-text">Olivier Armstrong</p>
+                            <i class="bi bi-cart"></i><span>19.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/tnt.jpeg" class="img-fluid" alt="tnt">
+                        <div class="card-body">
+                            <p class="card-text">Super Shedder</p>
+                            <i class="bi bi-cart"></i><span> 12.890 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/spider-man.webp" class="img-fluid" alt="spider man">
+                        <div class="card-body">
+                            <p class="card-text">Spider Man</p>
+                            <i class="bi bi-cart"></i><span> 15.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/seiya.webp" class="img-fluid" alt="seiya">
+                        <div class="card-body">
+                            <p class="card-text">Seiya</p>
+                            <i class="bi bi-cart"></i><span> 15.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/vegeta.webp" class="img-fluid" alt="vegeta">
+                        <div class="card-body">
+                            <p class="card-text">Vegeta</p>
+                            <i class="bi bi-cart"></i><span> 12.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/figuras.html">
+                        <img src="./resources/img/figuras/harry.webp" class="img-fluid" alt="harry">
+                        <div class="card-body">
+                            <p class="card-text">Harry Potter</p>
+                            <i class="bi bi-cart"></i><span> 19.990 CLP.</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="buttonViewMore">
-                <a href="./pages/figuras.html">Ver más</a>
-            </div>
+        </div>
+        <div class="buttonViewMore">
+            <a disabled href="./pages/figuras.html">Ver más</a>
         </div>
     </section>
+
     <section class="bg-1">
-        <!-- Computación -->
         <div class="container">
-            <div class="container">
-                <h2>Computación</h2>
-                <div class="productBoxs">
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 1</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 2</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 3</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 4</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 5</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 6</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 7</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 8</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 9</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 10</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 11</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 12</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 13</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/computacion.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Computación 14</h3>
-                        </a>
-                    </div>
+            <h2>Computación</h2>
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/placa-madre.jpg" class="img-fluid" alt="placa madre">
+                        <div class="card-body">
+                            <p class="card-text">placa madre gigabyte z590 aorus eLite</p>
+                            <i class="bi bi-cart"></i><span> 229.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/tarjeta-video.jpg" class="img-fluid" alt="tarjeta video">
+                        <div class="card-body">
+                            <p class="card-text">tarjeta de video MSI geforce rtx 4090</p>
+                            <i class="bi bi-cart"></i><span> 1.828.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/silla-gamer.jpg" class="img-fluid" alt="silla gamer">
+                        <div class="card-body">
+                            <p class="card-text">silla gamer RGB + Partlante bluetooth</p>
+                            <i class="bi bi-cart"></i><span> 179.000 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/proyector.jpg" class="img-fluid" alt="proyector">
+                        <div class="card-body">
+                            <p class="card-text">proyector 5g wifi</p>
+                            <i class="bi bi-cart"></i><span> 359.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/impresora.jpg" class="img-fluid" alt="impresora">
+                        <div class="card-body">
+                            <p class="card-text">HP LASERJET PRO M404DW</p>
+                            <i class="bi bi-cart"></i><span> 229.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/computacion.html">
+                        <img src="./resources/img/computacion/drone.jpg" class="img-fluid" alt="drone">
+                        <div class="card-body">
+                            <p class="card-text">drone plegable y compacto</p>
+                            <i class="bi bi-cart"></i><span> 79.990 CLP.</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="buttonViewMore">
-                <a href="./pages/computacion.html">Ver más</a>
-            </div>
+        </div>
+        <div class="buttonViewMore">
+            <a href="./pages/computacion.html">Ver más</a>
         </div>
     </section>
+
     <section class="bg-2">
-        <!-- Ofertas -->
         <div class="container">
-            <div class="container">
-                <h2>Ofertas</h2>
-                <div class="productBoxs">
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 1</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 2</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 3</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 4</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 5</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 6</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 7</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 8</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 9</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 10</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 11</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 12</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 13</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="./pages/ofertas.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Ofertas 14</h3>
-                        </a>
-                    </div>
+            <h2>Ofertas</h2>
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/procesador.jpeg" class="img-fluid" alt="procesador i7">
+                        <div class="card-body">
+                            <p class="card-text">Procesador I7 8 generación</p>
+                            <i class="bi bi-cart"></i><span> 85.000 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/chunli.jpg" class="img-fluid" alt="chunli">
+                        <div class="card-body">
+                            <p class="card-text">Chun Li</p>
+                            <i class="bi bi-cart"></i><span> 8.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/monitor.jpg" class="img-fluid" alt="monitor">
+                        <div class="card-body">
+                            <p class="card-text">Monitor 23'</p>
+                            <i class="bi bi-cart"></i><span> 99.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/vega.jpeg" class="img-fluid" alt="vega">
+                        <div class="card-body">
+                            <p class="card-text">Vega SF2</p>
+                            <i class="bi bi-cart"></i><span> 19.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/external-hdd.webp" class="img-fluid" alt="external hdd">
+                        <div class="card-body">
+                            <p class="card-text">External HDD 3T</p>
+                            <i class="bi bi-cart"></i><span> 142.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./pages/ofertas.html">
+                        <img src="./resources/img/ofertas/star-wars.jpg" class="img-fluid" alt="star-wars">
+                        <div class="card-body">
+                            <p class="card-text">Star wars Figura</p>
+                            <i class="bi bi-cart"></i><span> 92.990 CLP.</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="buttonViewMore">
-                <a href="./pages/ofertas.html">Ver más</a>
-            </div>
+        </div>
+        <div class="buttonViewMore">
+            <a href="./pages/ofertas.html">Ver más</a>
         </div>
     </section>
+
+
+
     <footer>
-        <p>Todos los derechos reservador Geeks 2023</p>
+        <p>Todos los derechos reservados Geeks 2023</p>
         <div>
             <a target="_blank" href="https://es-la.facebook.com/">Facebook</a>
             <a target="_blank" href="https://twitter.com/culturageek">Twitter</a>

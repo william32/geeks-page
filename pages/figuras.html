@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras</title>
+    <!-- integracion css de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../resources/img/fav.ico" type="image/x-icon">
 </head>
@@ -13,144 +16,103 @@
 <body>
     <header>
         <div class="logoNav">
-            <a href="../index.html">
-                <img src="../resources/img/logo.jpg" alt="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="accesosrios.html">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="figuras.html">Figuras</a>
-                    </li>
-                    <li>
-                        <a href="computacion.html">Computación</a>
-                    </li>
-                    <li>
-                        <a href="ofertas.html">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../resources/img/logo.jpg"
+                            alt="logo Weeks"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navcenter" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./accesosrios.html">ACCESORIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./figuras.html">FIGURAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./computacion.html">COMPUTACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./ofertas.html"> OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
         </div>
+
     </header>
-    <main>
-        <!-- Contenido principal -->
-        <div class="principalDiv">
-            <h1>Figuras</h1>
-            <div class="videoDestacado">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HR9A1IHHT7E"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-
-            <div class="parrafovideoDestacado">
-                <img class="iconCarro" src="../resources/img/cart.png" alt=""><span>Valor del producto: 79990 CLP</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est autem quisquam ducimus tempore
-                    enim. Beatae, tempora. Cupiditate voluptas deserunt, incidunt aut eum quisquam mollitia, vitae
-                    deleniti minus, amet sint? Saepe, reiciendis quia sunt rem earum omnis. Aut dolorem veniam saepe
-                    blanditiis sapiente, soluta, ipsam quo voluptatum facere cum ut?</p>
-            </div>
-
-        </div>
+    <main class="container-fluid contruccion">
+        <h1 class="title-construccion">Sitio en construcción</h1>
     </main>
     <section class="bg-2">
-        <!-- Figuras -->
         <div class="container">
-            <div class="container">
-                <h2>Más de Figuras</h2>
-                <div class="productBoxs">
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 1</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 2</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 3</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 4</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 5</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 6</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 7</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 8</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 9</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 10</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 11</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 12</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 13</h3>
-                        </a>
-                    </div>
-                    <div class="block">
-                        <a href="figuras.html">
-                            <img src="https://picsum.photos/200">
-                            <h3>Figura 14</h3>
-                        </a>
-                    </div>
+            <h2>Más FIGURAS</h2>
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/fma.jpeg" class="img-fluid" alt="fma">
+                        <div class="card-body">
+                            <p class="card-text">Olivier Armstrong</p>
+                            <i class="bi bi-cart"></i><span>19.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/tnt.jpeg" class="img-fluid" alt="tnt">
+                        <div class="card-body">
+                            <p class="card-text">Super Shedder</p>
+                            <i class="bi bi-cart"></i><span> 12.890 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/spider-man.webp" class="img-fluid" alt="spider man">
+                        <div class="card-body">
+                            <p class="card-text">Spider Man</p>
+                            <i class="bi bi-cart"></i><span> 15.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/seiya.webp" class="img-fluid" alt="seiya">
+                        <div class="card-body">
+                            <p class="card-text">Seiya</p>
+                            <i class="bi bi-cart"></i><span> 15.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/vegeta.webp" class="img-fluid" alt="vegeta">
+                        <div class="card-body">
+                            <p class="card-text">Vegeta</p>
+                            <i class="bi bi-cart"></i><span> 12.990 CLP.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./figuras.html">
+                        <img src="../resources/img/figuras/harry.webp" class="img-fluid" alt="harry">
+                        <div class="card-body">
+                            <p class="card-text">Harry Potter</p>
+                            <i class="bi bi-cart"></i><span> 19.990 CLP.</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -163,6 +125,10 @@
             <a target="_blank" href="https://www.tiktok.com/discover/geek?lang=es">Tiktok</a>
         </div>
     </footer>
+    <!-- integracion script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

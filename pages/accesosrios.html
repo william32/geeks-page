@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios</title>
+    <!-- integracion css de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../resources/img/fav.ico" type="image/x-icon">
 </head>
@@ -13,145 +17,124 @@
 <body>
     <header>
         <div class="logoNav">
-            <a href="../index.html">
-                <img src="../resources/img/logo.jpg" alt="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="accesosrios.html">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="figuras.html">Figuras</a>
-                    </li>
-                    <li>
-                        <a href="computacion.html">Computación</a>
-                    </li>
-                    <li>
-                        <a href="ofertas.html">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    </header>
-    <main>
-        <!-- Contenido principal -->
-        <div class="principalDiv accessorios">
-            <h1>Accesorios</h1>
-            <div class="videoDestacado">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LHveeSdynY0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-            <img class="iconCarro" src="../resources/img/cart.png" alt=""><span>Valor del producto: 19990 CLP</span>
-            <div class="parrafovideoDestacado">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est autem quisquam ducimus tempore
-                    enim. Beatae, tempora. Cupiditate voluptas deserunt, incidunt aut eum quisquam mollitia, vitae
-                    deleniti minus, amet sint? Saepe, reiciendis quia sunt rem earum omnis. Aut dolorem veniam saepe
-                    blanditiis sapiente, soluta, ipsam quo voluptatum facere cum ut?</p>
-            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../resources/img/logo.jpg"
+                            alt="logo Weeks"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navcenter" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./accesosrios.html">ACCESORIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./figuras.html">FIGURAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./computacion.html">COMPUTACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="./ofertas.html"> OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="container-fluid accessorios">
+        <div class="row">
+            <!-- Contenido principal -->
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <h1>Accesorios Destacado</h1>
+
+                <div class="col-xl-8 col-md-6 col-sm-12 m-5 playerContainer">
+                    <iframe src="https://www.youtube.com/embed/muEvNG3tqoA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 parrafoAccesorio">
+                    <p>Pack Teclado + Mouse</p>
+                    <i class="bi bi-cart"></i><span>19.990 CLP.</span>
+                </div>
+            </div>
         </div>
     </main>
     <section class="bg-1">
-        <!-- Accesorios -->
         <div class="container">
-            <h2>Más de Accesorios</h2>
-            <div class="productBoxs section">
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 1</h3>
+            <h2>Más Accesorios</h2>
+            <div class="row container-boxs">
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/pack-teclado-mouse.jpeg" class="img-fluid"
+                            alt="pack teclado mouse">
+                        <div class="card-body">
+                            <p class="card-text">Pack Teclado + Mouse</p>
+                            <i class="bi bi-cart"></i><span>19.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 2</h3>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/monitor.jpeg" class="img-fluid" alt="monitor">
+                        <div class="card-body">
+                            <p class="card-text">Pc escritorio</p>
+                            <i class="bi bi-cart"></i><span> 28.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 3</h3>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/router.jpeg" class="img-fluid" alt="router">
+                        <div class="card-body">
+                            <p class="card-text">router</p>
+                            <i class="bi bi-cart"></i><span> 25.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 4</h3>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/mouse.jpeg" class="img-fluid" alt="mouse">
+                        <div class="card-body">
+                            <p class="card-text">mouse</p>
+                            <i class="bi bi-cart"></i><span> 3.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 5</h3>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/audifonos.jpeg" class="img-fluid" alt="audifonos">
+                        <div class="card-body">
+                            <p class="card-text">audifonos gamer</p>
+                            <i class="bi bi-cart"></i><span> 16.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 6</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 7</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 8</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 9</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 10</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 11</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 12</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 13</h3>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="accesosrios.html">
-                        <img src="https://picsum.photos/200">
-                        <h3>Accesorios 14</h3>
+                <div class="col-xl-2 col-md-4 col-sm-12">
+                    <a href="./accesosrios.html">
+                        <img src="../resources/img/accesorios/gabinete.jpeg" class="img-fluid" alt="gabinete">
+                        <div class="card-body">
+                            <p class="card-text">gabinete</p>
+                            <i class="bi bi-cart"></i><span> 42.990 CLP.</span>
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
+
     </section>
     <footer>
         <p>Todos los derechos reservador Geeks 2023</p>
@@ -161,6 +144,10 @@
             <a target="_blank" href="https://www.tiktok.com/discover/geek?lang=es">Tiktok</a>
         </div>
     </footer>
+    <!-- integracion script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
