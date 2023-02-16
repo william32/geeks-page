@@ -1,0 +1,41 @@
+/* Contacto */
+.contactoPage {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    /* gradiente generada por la pagina https://cssgradient.io/ */
+    background-color: #FBAB7E;
+    background-image: linear-gradient(90deg, #FBAB7E 46%, #F7CE68 100%);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.contactoButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #b55631;
+    border: 1px solid $color-destacado;
+    color: cornsilk;
+
+    &:hover {
+        transform: scale(1.1);
+        background: #bd5f1a;
+        color: $color-destacado;
+    }
+}
+
+.ubicacion iframe {
+    @media (max-width: 1024px) {
+        height: 600px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* END Contacto */

@@ -1,0 +1,42 @@
+/* Header */
+.logoNav {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    background-color: $bg-header;
+
+    @media (max-width: 1024px) {
+        background-image: none;
+        height: auto;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        background-image: none;
+        height: auto;
+        display: block;
+    }
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.navcenter {
+    justify-content: center;
+}
+
+.nav-link:hover {
+    color: $color-hover;
+}
+
+.nav-link.active:hover {
+    color: $color-hover;
+    font-weight: bold;
+}
+
+a.nav-link.active {
+    text-decoration: underline;
+}
+
+/* END Header */

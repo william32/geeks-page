@@ -1,0 +1,21 @@
+/* Footer */
+footer {
+    background-color: $bg-footer;
+    text-align: center;
+    font: 14px sans-serif;
+    padding: 45px 50px;
+    color: $color-footer;
+}
+
+footer a {
+    font-weight: bold;
+    color: $color-footer;
+    text-decoration: none;
+    margin: 5px;
+    
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+/* END Footer */

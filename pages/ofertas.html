@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas</title>
+    <meta name="description" content="Revisa las ultimas ofertas disponibles.">
+    <title>Ofertas - Geeks</title>
     <!-- integracion css de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../resources/img/fav.ico" type="image/x-icon">
 </head>
@@ -33,10 +35,10 @@
                                 <a class="nav-link" href="./accesosrios.html">ACCESORIOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="./figuras.html">FIGURAS</a>
+                                <a class="nav-link" href="./figuras.html">FIGURAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="./computacion.html">COMPUTACIÓN</a>
+                                <a class="nav-link" href="./computacion.html">COMPUTACIÓN</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="./ofertas.html"> OFERTAS</a>
@@ -53,8 +55,76 @@
         </div>
 
     </header>
-    <main class="container-fluid contruccion">
-        <h1 class="title-construccion">Sitio en construcción</h1>
+    <main class="ofertas">
+        <div class="container">
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.tiktok.com/discover/geek?lang=es" target="_blank">
+                            <img src="../resources/img/carrousel/im1-min.jpg" class="d-block w-100"
+                                alt="preventa-banday">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="../index.html">
+                            <img src="../resources/img/carrousel/im2-min.jpg" class="d-block w-100" alt="preventa-zipo">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./figuras.html">
+                            <img src="../resources/img/carrousel/im3-min.jpg" class="d-block w-100" alt="preventa-toys">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container mt-5 pb-5">
+            <h1>Ofertas Destacadas</h1>
+            <div class="card-group">
+
+                <div class="card">
+                    <img class="card-img-top" src="../resources/img/ofertas/vega.jpeg" alt="Vega Sf2">
+                    <div class="card-body">
+                        <h3 class="card-title">Vega SF'2</h3>
+                        <p class="card-text">Figura Street Fighter Vega - S.H. Figuarts Tamashii Nations Bandai</p>
+                        <p class="card-text layer"><a href="../pages/accesosrios.html"><small class="text-muted"><i
+                                        class="bi bi-cart-fill"></i> 19.990 CLP.</small></a></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="../resources/img/ofertas/sailor-moon.jpg" alt="Sailor moon">
+                    <div class="card-body">
+                        <h3 class="card-title">Sailor Moon</h3>
+                        <p class="card-text">Figura Pretty Guardian Sailor Moon Eternal The Movie Glitter.</p>
+                        <p class="card-text layer"><a href="../pages/computacion.html"><small class="text-muted"><i
+                                        class="bi bi-cart-fill"></i> 32.990 CLP.</small></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="../resources/img/ofertas/megaman.png" alt="Mega Man">
+                    <div class="card-body">
+                        <h3 class="card-title">Mega Man</h3>
+                        <p class="card-text">Figura Megaman ShFiguath Figuarts Tamashii Nations Bandai</p>
+                        <p class="card-text layer"><a
+                                href="https://articulo.mercadolibre.cl/MLC-1299831476-figura-model-kit-megaman-x-kotobukiya-premium-charge-shot-_JM#position=2&search_layout=stack&type=item&tracking_id=06b40340-d732-4c1f-9177-18fbeea99d45"
+                                target="_blank"><small class="text-muted"><i class="bi bi-cart-fill"></i> 24.290
+                                    CLP.</small></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <section class="bg-2">
         <div class="container">
@@ -98,9 +168,9 @@
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-12">
                     <a href="./ofertas.html">
-                        <img src="../resources/img/ofertas/external-hdd.webp" class="img-fluid" alt="external hdd">
+                        <img src="../resources/img/ofertas/external-hdd.webp" class="img-fluid" alt="external hdd 3TB">
                         <div class="card-body">
-                            <p class="card-text">External HDD 3T</p>
+                            <p class="card-text">External HDD 3TB</p>
                             <i class="bi bi-cart"></i><span> 142.990 CLP.</span>
                         </div>
                     </a>
@@ -120,9 +190,10 @@
     <footer>
         <p>Todos los derechos reservador Geeks 2023</p>
         <div>
-            <a target="_blank" href="https://es-la.facebook.com/">Facebook</a>
-            <a target="_blank" href="https://twitter.com/culturageek">Twitter</a>
-            <a target="_blank" href="https://www.tiktok.com/discover/geek?lang=es">Tiktok</a>
+            <a target="_blank" href="https://es-la.facebook.com/"><i class="bi bi-facebook">Facebook</i></a>
+            <a target="_blank" href="https://twitter.com/culturageek"><i class="bi bi-twitter">Twitter</i></a>
+            <a target="_blank" href="https://www.tiktok.com/discover/geek?lang=es"><i
+                    class="bi bi-tiktok">Tiktok</i></a>
         </div>
     </footer>
     <!-- integracion script de bootstrap -->
