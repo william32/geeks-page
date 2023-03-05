@@ -7,3 +7,4 @@ Es un sitio web desarrollado en HTML5 y Framework Bootstrap.
 - FIGURAS
 - COMPUTACIÓN
 - OFERTAS
+- PRODUCTOS (nuevo)
