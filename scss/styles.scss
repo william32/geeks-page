@@ -146,7 +146,7 @@ h2 {
 
         &:hover {
             transform: scale(1.1);
-            
+
             color: $color-destacado;
         }
     }
@@ -387,6 +387,12 @@ h2 {
 .carousel-control-prev-icon {
     height: 4rem;
     width: 4rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 200px;
+    }
 }
 
 
